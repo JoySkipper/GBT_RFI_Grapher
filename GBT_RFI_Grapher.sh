@@ -1,9 +1,5 @@
-#which python3
-#python3 -m venv ./GBT_RFI_Grapher_env
 python2=$(python --version | grep 'Python\ 2')
 python3=$(python --version | grep 'Python\ 3')
-#echo $python2
-#echo $python3
 if [[ Python\ 2 = $python2* ]];
 then
     virtualenv -p python GBT_RFI_Grapher_env
