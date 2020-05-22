@@ -25,7 +25,8 @@ def main():
     plt.ylabel(str(header[1]))
     plt.title('RFI Data Plot')
     plt.show()
-    save_name = 'RFI_Data_Plot_'+myfile[:-3]
+    filename = myfile.split('/')[-1]
+    save_name = 'RFI_Data_Plot_'+filename[:-3]
     plt.savefig(save_name)
     print('saved as '+save_name)
 
